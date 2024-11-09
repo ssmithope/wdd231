@@ -1,4 +1,7 @@
 /* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Apply the Google Font to the body */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -203,38 +206,36 @@ section h2 {
     border-radius: 5px;
 }
 
-.course-btn:hover {
-    background-color: #5a2e0c; 
+/* Blue Button Styling */
+.blue-btn {
+    background-color: #808080; 
+    color: white; 
 }
 
-/* Green Button Styling */ 
-.green-btn { 
-    background-color: #b9c4bb; 
-    color: rgb(8, 7, 7); 
-} 
-
-.blue-btn { 
-    background-color: #b9c4bb;  
-    color: rgb(8, 7, 7); 
+/* Green Button Styling */
+.green-btn {
+    background-color: #808080; 
+    color: white; 
 }
 
 /* Border Line Between Rows */ 
-.course-buttons .column:nth-child(2) { 
-    border-top: 2px solid #ccc; /* Add a border line between rows */ 
-    padding-top: 20px; /* Add padding to separate the border from the buttons */ 
+.course-buttons { 
+    display: flex; 
+    flex-wrap: wrap; 
+} 
+.course-buttons::before { 
+    content: "";
+    display: block; 
+    width: calc(100% - 40px);
+    margin: 20px auto; 
+    border-top: 2px solid #494444; 
 }
 
 /* Footer Styling */
 footer {
     background-color: #102c50; 
     color: white; 
-}
-
-/* Fixes */
-.markdown-body li {
-    overflow-wrap: break-word; /* Correct value */
-}
-
-.markdown-body pre code, .markdown-body pre tt {
-    max-width: none; /* Correct value */
+    text-align: center; 
+    padding: 20px; 
+    position: relative; 
 }
