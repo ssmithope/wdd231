@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to the course home page by Smith Eutrope Zephirin. Find all the necessary information and resources here.">
+    <meta name="author" content="Smith Eutrope Zephirin">
+    <title>Course Home - Smith Eutrope Zephirin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/course-home-page.css">
+    <script src="scripts/course-home-page.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/profile.jpg" alt="Profile Picture" class="profile-picture">
+        <h1>Smith Eutrope Zephirin</h1>
+    </header>
+    <nav>
+        <span class="hamburger">☰</span>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">GitHub Profile</a></li>
+            <li><a href="#">LinkedIn</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <div class="content-row">
+            <section id="home">
+                <h2>Course Work</h2>
+                <ul class="course-list">
+                    <li>.</li>
+                    <li>.</li>
+                    <li>.</li>
+                </ul>
+            </section>
+            <section id="chamber">
+                <h2>Saint Louis, Missouri</h2>
+                <img src="images/saint-louis.jpg" alt="Saint Louis, Missouri, United States" class="saintlouis-image">
+                <p>Saint Louis Rock</p>
+            </section>
+        </div>
+        <section id="github">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="button-group">
+                <button class="filter-btn" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="CSE">CSE</button>
+                <button class="filter-btn" data-filter="WDD">WDD</button>
+            </div>
+            <div class="course-buttons">
+                <div class="column">
+                    <button class="course-btn">CSE 110</button>
+                    <button class="course-btn blue-btn">CSE 210</button>
+                </div>
+                <div class="column">
+                    <button class="course-btn">WDD 130</button>
+                    <button class="course-btn">WDD 131</button>
+                </div>
+                <div class="column">
+                    <button class="course-btn">CSE 111</button>
+                    <button class="course-btn green-btn">WDD 231</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span>🌴Smith Eutrope Zephirin🌴 Saint Louis, Missouri</p> 
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
