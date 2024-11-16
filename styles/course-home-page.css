@@ -39,7 +39,7 @@ nav a {
     text-align: center;
 }
 nav a:hover {
-    background-color: #ddd;
+    background-color: #0c6097;
     color: black;
 }
 
@@ -59,7 +59,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #102c50;
+    background-color: #104a78;
     text-align: center;
 }
 header img {
@@ -97,7 +97,7 @@ header h1 {
     display: none;
     font-size: 30px;
     cursor: pointer;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 /* Main Content */
@@ -127,7 +127,7 @@ section {
 }
 
 section h2 {
-    background-color: #102c50; 
+    background-color: #104a78; 
     padding: 10px;
     color: white; 
     margin: 0; 
@@ -179,7 +179,7 @@ section h2 {
 }
 
 .filter-btn:hover {
-    background-color: #102c50; 
+    background-color: #104a78; 
 }
 
 .course-buttons {
@@ -198,7 +198,7 @@ section h2 {
 }
 
 .course-btn {
-    background-color: #8b4513; 
+    background-color: #4e2304; 
     color: white; 
     border: none;
     padding: 10px 20px;
@@ -209,14 +209,14 @@ section h2 {
 
 /* Blue Button Styling */
 .blue-btn {
-    background-color: #808080; 
-    color: white; 
+    background-color: #ccc7c7; 
+    color: rgb(5, 5, 5); 
 }
 
 /* Green Button Styling */
 .green-btn {
-    background-color: #808080; 
-    color: white; 
+    background-color: #ccc7c7; 
+    color: rgb(12, 11, 11); 
 }
 
 /* Border Line Between Rows */ 
@@ -234,7 +234,7 @@ section h2 {
 
 /* Footer Styling */
 footer {
-    background-color: #102c50; 
+    background-color: #104a78; 
     color: white; 
     text-align: center; 
     padding: 20px; 
