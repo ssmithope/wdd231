@@ -2,9 +2,16 @@ const url = 'data/members.json';
 const cards = document.querySelector('#cards');
 
 async function getMemberData() {
-    const response = await fetch(url);
-    const data = await response.json();
-    displayMembers(data);
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        displayMembers(data);
+    } catch (error) {
+        console.error('There has been a problem with your fetch operation:', error);
+    }
 }
 
 const displayMembers = (members) => {

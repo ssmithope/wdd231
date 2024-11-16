@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f9f9f9; /* Light background color */
+    background-color: #f5f5f5;
 }
 
 /* Layout and Basic Styles */
@@ -21,14 +21,14 @@ header, nav, main, footer {
     text-align: center;
 }
 header, footer {
-    background-color: #102c50; /* Dark blue background */
-    color: white; /* White text */
+    background-color: #102c50;
+    color: white;
 }
 header {
-    margin-bottom: 20px; /* Space below the header */
+    margin-bottom: 20px;
 }
 footer {
-    margin-top: 20px; /* Space above the footer */
+    margin-top: 20px;
 }
 
 /* Navigation Styling */
@@ -43,7 +43,7 @@ nav li {
     margin: 0 15px;
 }
 nav a {
-    color: white;
+    color: #020202;
     text-decoration: none;
     padding: 10px;
 }
@@ -58,30 +58,30 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Space between cards */
+    gap: 20px;
 }
 #cards section {
-    background-color: white; /* Card background color */
-    border: 2px solid #ccc; /* Card border */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    width: 280px; /* Card width */
-    padding: 10px; /* Card padding */
-    text-align: left; /* Text alignment */
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    padding: 10px;
+    text-align: left;
 }
 #cards h2 {
-    background-color: #184e7a; /* Dark blue background */
-    color: white; /* White text */
+    background-color: #184e7a;
+    color: white;
     padding: 10px;
-    border-radius: 5px 5px 0 0; /* Round top corners */
-    margin: -10px -10px 10px -10px; /* Adjust margins to cover card edges */
+    border-radius: 5px 5px 0 0;
+    margin: -10px -10px 10px -10px;
     text-align: center;
 }
 #cards img {
-    width: 100%; /* Full width image */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 5px; /* Optional: Rounded corners */
-    margin-bottom: 10px; /* Space below the image */
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 /* Responsive Design */
@@ -90,11 +90,11 @@ nav a:hover {
         padding: 1em 10px;
     }
     #cards section {
-        width: 100%; /* Full width for small screens */
+        width: 100%;
     }
 }
 
 /* Footer Styling */
 footer p {
-    margin: 5px 0; /* Adjust margin for footer text */
+    margin: 5px 0;
 }

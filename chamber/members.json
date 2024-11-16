@@ -1,3 +1,4 @@
+
 [
     {
       "name": "Company A",
@@ -14,7 +15,46 @@
       "website": "http://www.companyb.com",
       "image": "companyb.png",
       "membershipLevel": 2
+    },
+    {
+      "name": "Company C",
+      "address": "222 Peer St, City, ST 12345",
+      "phone": "555-5678",
+      "website": "http://www.companyc.com",
+      "image": "companyc.png",
+      "membershipLevel": 2
+    },
+    {
+      "name": "Company D",
+      "address": "333 Don St, City, ST 12345",
+      "phone": "555-5678",
+      "website": "http://www.companyd.com",
+      "image": "companyd.png",
+      "membershipLevel": 2
+    },
+    {
+      "name": "Company E",
+      "address": "213 Pius St, City, ST 12345",
+      "phone": "555-5678",
+      "website": "http://www.companye.com",
+      "image": "companye.png",
+      "membershipLevel": 2
+    },
+    {
+      "name": "Company F",
+      "address": "212 Jay St, City, ST 12345",
+      "phone": "555-5678",
+      "website": "http://www.companyf.com",
+      "image": "companyf.png",
+      "membershipLevel": 2
+    },
+    {
+      "name": "Company G",
+      "address": "323 Ore St, City, ST 12345",
+      "phone": "555-5678",
+      "website": "http://www.companyg.com",
+      "image": "companyg.png",
+      "membershipLevel": 2
     }
-
   ]
   
