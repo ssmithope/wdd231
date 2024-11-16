@@ -23,6 +23,7 @@ header, nav, main, footer {
 header, footer {
     background-color: #102c50;
     color: white;
+    max-width: 1400px;
 }
 header {
     margin-bottom: 20px;
@@ -53,6 +54,16 @@ nav a:hover {
     border-radius: 5px;
 }
 
+/* Add styles for grid and list toggle buttons */
+.view-toggle {
+    margin-top: 10px;
+}
+.view-toggle button {
+    padding: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
 /* Card Styling */
 #cards {
     display: flex;
@@ -68,6 +79,9 @@ nav a:hover {
     width: 280px;
     padding: 10px;
     text-align: left;
+}
+#cards.list-view section {
+    width: 100%;
 }
 #cards h2 {
     background-color: #184e7a;

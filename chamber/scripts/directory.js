@@ -51,3 +51,15 @@ getMemberData();
 // Display current year and last modified date in the footer
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = document.lastModified;
+
+// Grid/List Toggle
+const gridViewButton = document.getElementById('gridView');
+const listViewButton = document.getElementById('listView');
+
+gridViewButton.addEventListener('click', () => {
+    cards.classList.remove('list-view');
+});
+
+listViewButton.addEventListener('click', () => {
+    cards.classList.add('list-view');
+});
