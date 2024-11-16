@@ -1,13 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Set current year and last modified date
     document.getElementById("currentyear").textContent = new Date().getFullYear();
     document.getElementById("lastModified").textContent = "Last modified: " + document.lastModified;
 
+    // Toggle navigation menu
     const hamburger = document.querySelector('.hamburger');
-    const nav = document.querySelector('nav');
+    const navLinks = document.querySelector('nav ul');
     hamburger.addEventListener('click', () => {
-        nav.classList.toggle('active');
+        navLinks.classList.toggle('active');
     });
 
+    // Course list array
     const courses = [
         { code: 'CSE101', name: 'Intro to Computer Science', credits: 3, completed: false },
         { code: 'CSE102', name: 'Data Structures', credits: 3, completed: false },
@@ -24,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Display courses
     function displayCourses(filter) {
-        const courseContainer = document.getElementById('courses');
+        const courseContainer = document.getElementById('course-container');
         courseContainer.innerHTML = ''; // Clear previous content
 
         const filteredCourses = filter ? courses.filter(course => course.code.startsWith(filter)) : courses;
@@ -53,5 +56,6 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('showWDD').addEventListener('click', () => displayCourses('WDD'));
     document.getElementById('showAll').addEventListener('click', () => displayCourses());
 
+    // Initial display of all courses
     displayCourses();
 });
