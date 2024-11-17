@@ -8,7 +8,7 @@ body {
     padding: 0;
     background-color: #f4f4f9;
     color: #333;
-  }
+}
 
 /* Layout and Basic Styles */
 header, nav, main, footer {
@@ -71,32 +71,45 @@ header h1 {
 }
 
 /* Responsive Navigation */
-@media (max-width: 600px) {
-    nav ul {
+@media (max-width: 768px) {
+    .menu {
         display: none;
         flex-direction: column;
-        background-color: #333;
+        align-items: center;
     }
-    nav.active ul {
+
+    .menu.active {
         display: flex;
     }
+
     .hamburger {
-        display: block;
-        cursor: pointer;
+        display: flex;
     }
 }
-@media (min-width: 601px) {
+
+@media (min-width: 768px) {
+    .menu {
+        display: flex;
+        flex-direction: row;
+    }
+
     .hamburger {
         display: none;
     }
 }
 
-/* Wayfinding Design */
+/* Hamburger Menu */
 .hamburger {
     display: none;
     font-size: 30px;
     cursor: pointer;
     color: rgb(255, 255, 255);
+}
+.bar {
+    width: 25px;
+    height: 3px;
+    margin: 3px;
+    background-color: #fff;
 }
 
 /* Main Content */
@@ -229,6 +242,22 @@ section h2 {
     width: calc(100% - 40px);
     margin: 20px auto; 
     border-top: 2px solid #494444; 
+}
+
+/* Course Cards */
+.course-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.course-card:hover {
+    transform: scale(1.05);
+}
+.completed {
+    background-color: #dff0d8;
 }
 
 /* Footer Styling */

@@ -18,8 +18,12 @@
         <h1>Smith Eutrope Zephirin</h1>
     </header>
     <nav>
-        <span class="hamburger">☰</span>
-        <ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div> 
+            <div class="bar"></div>
+            </div>
+        <ul class="menu" id="menu">
             <li><a href="#" class="active" style="color: #f3d035;">Home</a></li>
             <li><a href="#" style="color: #FFFFFF;">Chamber</a></li>
             <li><a href="#" style="color: #FFFFFF;">GitHub Profile</a></li>
@@ -44,6 +48,9 @@
         </div>
         <section id="github">
             <h2>Web and Computer Programming Certificate</h2>
+            <div class="button-group"> 
+                <input type="text" id="search" onkeyup="filterCourses()" placeholder="Search for courses..."> 
+            </div>
             <div class="button-group">
                 <button class="filter-btn" onclick="filterCourses('all')">All</button>
                 <button class="filter-btn" onclick="filterCourses('CSE')">CSE</button>
@@ -52,28 +59,30 @@
             <div class="course-buttons">
                 <div class="column course all CSE">
                     <button class="course-btn">CSE 110</button>
+                    <span class="credit">3</span>
                     <button class="course-btn blue-btn">CSE 210</button>
                     <span class="credit">3</span>
                 </div>
                 <div class="column course all WDD">
                     <button class="course-btn">WDD 130</button>
+                    <span class="credit">3</span>
                     <button class="course-btn">WDD 131</button>
-                    <span class="credit">4</span>
+                    <span class="credit">3</span>
                 </div>
                 <div class="column course all CSE WDD">
                     <button class="course-btn">CSE 111</button>
+                    <span class="credit">3</span>
                     <button class="course-btn green-btn">WDD 231</button>
                     <span class="credit">3</span>
                 </div>
             </div>
+            <p id="totalCredits">Total Credits: 18</p>
         </section>
     </main>
-    <footer>
+    <footer> 
         <p>© <span id="currentyear"></span>🌴Smith Eutrope Zephirin🌴 Saint Louis, Missouri.</p> 
         <p id="lastModified" style="color: #f3d035;"></p>
-        <p id="total-credits"></p>
-    </footer>
-    <div id="course-container"></div>
-    <script src="scripts/course-home-page.js"></script>
-</body>
+    </footer> 
+    <div id="course-container"></div> 
+</body> 
 </html>

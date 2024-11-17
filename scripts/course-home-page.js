@@ -5,57 +5,45 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Toggle navigation menu
     const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('nav ul');
+    const navLinks = document.querySelector('.menu');
     hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('active');
     });
 
-    // Course list array
-    const courses = [
-        { code: 'CSE101', name: 'Intro to Computer Science', credits: 3, completed: false },
-        { code: 'CSE102', name: 'Data Structures', credits: 3, completed: false },
-        { code: 'WDD101', name: 'Web Development Basics', credits: 3, completed: false },
-        { code: 'WDD102', name: 'Advanced Web Development', credits: 3, completed: false }
-    ];
+    // Filter courses function
+    function filterCourses() {
+        const input = document.getElementById('search').value.toLowerCase();
+        const courses = document.querySelectorAll('.course');
 
-    // Modify completed property
-    courses.forEach(course => {
-        if (['CSE101', 'WDD101'].includes(course.code)) {
-            course.completed = true;
-        }
-    });
-
-    // Display courses
-    function displayCourses(filter) {
-        const courseContainer = document.getElementById('course-container');
-        courseContainer.innerHTML = ''; // Clear previous content
-
-        const filteredCourses = filter ? courses.filter(course => course.code.startsWith(filter)) : courses;
-
-        filteredCourses.forEach(course => {
-            const courseCard = document.createElement('div');
-            courseCard.classList.add('course-card');
-            if (course.completed) {
-                courseCard.classList.add('completed');
+        courses.forEach(course => {
+            const category = course.getAttribute('data-category').toLowerCase();
+            if (category.includes(input)) {
+                course.classList.add('show');
+            } else {
+                course.classList.remove('show');
             }
-            courseCard.innerHTML = `
-                <h3>${course.name}</h3>
-                <p>Code: ${course.code}</p>
-                <p>Credits: ${course.credits}</p>
-            `;
-            courseContainer.appendChild(courseCard);
         });
 
-        // Update total credits
-        const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
-        document.getElementById('totalCredits').textContent = `Total Credits: ${totalCredits}`;
+        calculateTotalCredits();
     }
 
-    // Event listeners for buttons
-    document.getElementById('showCSE').addEventListener('click', () => displayCourses('CSE'));
-    document.getElementById('showWDD').addEventListener('click', () => displayCourses('WDD'));
-    document.getElementById('showAll').addEventListener('click', () => displayCourses());
+    // Calculate total credits function
+    function calculateTotalCredits() {
+        const courses = document.querySelectorAll('.course.show');
+        let totalCredits = 0;
+
+        courses.forEach(course => {
+            totalCredits += parseInt(course.getAttribute('data-credits'));
+        });
+
+        document.getElementById('totalCredits').textContent = `Total Credits: ${totalCredits}`;
+        document.getElementById('footerCredits').textContent = `Total Credits: ${totalCredits}`;
+    }
+
+    // Hook up the input to the filter function and initial calculations
+    const search = document.getElementById('search');
+    search.addEventListener('keyup', filterCourses);
 
     // Initial display of all courses
-    displayCourses();
+    filterCourses();
 });
