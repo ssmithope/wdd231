@@ -11,13 +11,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Filter courses function
-    function filterCourses() {
-        const input = document.getElementById('search').value.toLowerCase();
+    function filterCourses(filter = '') {
+        const input = filter.toLowerCase() || document.getElementById('search').value.toLowerCase();
         const courses = document.querySelectorAll('.course');
 
         courses.forEach(course => {
             const category = course.getAttribute('data-category').toLowerCase();
-            if (category.includes(input)) {
+            if (category.includes(input) || filter === 'all') {
                 course.classList.add('show');
             } else {
                 course.classList.remove('show');
@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         document.getElementById('totalCredits').textContent = `Total Credits: ${totalCredits}`;
+        document.getElementById('footerCredits').textContent = `Total Credits: ${totalCredits}`;
     }
 
     // Hook up the input to the filter function and initial calculations
@@ -44,5 +45,5 @@ document.addEventListener('DOMContentLoaded', function() {
     search.addEventListener('keyup', filterCourses);
 
     // Initial display of all courses
-    filterCourses();
+    filterCourses('all');
 });
