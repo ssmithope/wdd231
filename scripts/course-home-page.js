@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         document.getElementById('totalCredits').textContent = `Total Credits: ${totalCredits}`;
-        document.getElementById('footerCredits').textContent = `Total Credits: ${totalCredits}`;
     }
 
     // Hook up the input to the filter function and initial calculations
