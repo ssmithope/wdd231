@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("currentyear").textContent = new Date().getFullYear();
     document.getElementById("lastModified").textContent = new Date().toLocaleString();
 
-    const weatherApiKey = 'YOUR_OPENWEATHERMAP_API_KEY'; // Replace with your actual API key
+    const weatherApiKey = '432a2657254282a9e91171c635c9438d'; // Your actual API key
     const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=St.%20Louis&units=imperial&appid=${weatherApiKey}`;
     const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=St.%20Louis&units=imperial&appid=${weatherApiKey}`;
     const membersUrl = 'data/members.json';

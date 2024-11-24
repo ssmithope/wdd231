@@ -12,31 +12,93 @@
     <!-- Facebook Open Graph meta tags -->
     <meta property="og:title" content="Chamber of Commerce Directory">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://ssmithope.github.io/wdd231/chamber/directory.html/chamber/images/image.jpg">
+    <meta property="og:image" content="https://ssmithope.github.io/wdd231/chamber/images/image.jpg">
     <meta property="og:url" content="https://ssmithope.github.io/wdd231/chamber/directory.html">
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Chamber of Commerce Directory</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="view-toggle">
-            <button id="gridView">Grid View</button>
-            <button id="listView">List View</button>
+        <div class="logo-title">
+            <img src="images/logo.jpg" alt="Logo" class="logo">
+            <div class="title">
+                <h1>Timbuktu</h1>
+                <p>Chamber of Commerce</p>
+            </div>
         </div>
-    </nav>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <div id="cards"></div>
+        <section id="hero">
+            <img src="images/hero.jpg" alt="Hero Image">
+        </section>
+        <h2>Home</h2>
+        <section id="home-sections">
+            <div class="section" id="events">
+                <h3>Events</h3>
+            </div>
+            <div class="section" id="current-weather">
+                <h3>Current Weather</h3>
+            </div>
+            <div class="section" id="weather-forecast">
+                <h3>Weather Forecast</h3>
+                <p>Today: 90°F</p>
+                <p>Wednesday: 89°F</p>
+                <p>Thursday: 68°F</p>
+            </div>
+        </section>
+        <section id="business-listings">
+            <div class="business">
+                <h3>Business Name 1</h3>
+                <p>Tagline 1</p>
+                <p>Email: info1@gmail.com</p>
+                <p>Phone: 800-555-1234</p>
+                <p>URL: mybusiness1.com</p>
+            </div>
+            <div class="business">
+                <h3>Business Name 2</h3>
+                <p>Tagline 2</p>
+                <p>Email: info2@gmail.com</p>
+                <p>Phone: 800-555-5678</p>
+                <p>URL: mybusiness2.com</p>
+            </div>
+            <div class="business">
+                <h3>Business Name 3</h3>
+                <p>Tagline 3</p>
+                <p>Email: info3@gmail.com</p>
+                <p>Phone: 800-555-9101</p>
+                <p>URL: mybusiness3.com</p>
+            </div>
+        </section>
     </main>
     <footer>
-        <p>Smith Eutrope Zephirin | Chamber of Commerce | WDD 231</p>
-        <p>&copy; <span id="currentyear"></span> | Last Updated: <span id="lastModified"></span></p>
+        <div class="footer-left">
+            <p>Timbuktu Chamber of Commerce</p>
+            <p>10 Rue De la Paix</p>
+            <p>Timbuktu, Mali 999</p>
+            <p>info@timbuktucc.org</p>
+            <p>(223) 555-2300</p>
+        </div>
+        <div class="footer-center">
+            <div class="social-media">
+                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p>WDD231 Class Project</p>
+            <p>Smith Eutrope Zephirin</p>
+            <p>&copy; 2024 Timbuktu Chamber of Commerce</p>
+            <p>&copy; <span id="currentyear"></span> | Last Updated: <span id="lastModified"></span></p>
+        </div>
     </footer>
 </body>
 </html>
