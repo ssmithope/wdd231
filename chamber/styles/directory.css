@@ -26,7 +26,27 @@ header, footer {
     max-width: 1400px;
 }
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 20px;
+}
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.title h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+.title p {
+    margin: 0;
+    font-size: 0.8em;
 }
 footer {
     margin-top: 20px;
@@ -44,7 +64,7 @@ nav li {
     margin: 0 15px;
 }
 nav a {
-    color: #020202;
+    color: white;
     text-decoration: none;
     padding: 10px;
 }
@@ -54,48 +74,54 @@ nav a:hover {
     border-radius: 5px;
 }
 
-/* Add styles for grid and list toggle buttons */
-.view-toggle {
-    margin-top: 10px;
-}
-.view-toggle button {
-    padding: 10px;
-    margin: 0 5px;
-    cursor: pointer;
-}
-
-/* Card Styling */
-#cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-#cards section {
-    background-color: white;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 280px;
-    padding: 10px;
-    text-align: left;
-}
-#cards.list-view section {
-    width: 100%;
-}
-#cards h2 {
-    background-color: #184e7a;
-    color: white;
-    padding: 10px;
-    border-radius: 5px 5px 0 0;
-    margin: -10px -10px 10px -10px;
+/* Hero Image */
+#hero {
     text-align: center;
 }
-#cards img {
+#hero img {
     width: 100%;
     height: auto;
+}
+
+/* Home Sections */
+#home-sections {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.section {
+    flex: 1;
+    margin: 0 10px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    margin-bottom: 10px;
+}
+.section h3 {
+    margin-top: 0;
+}
+
+/* Align h2 to the left */ 
+h2 { 
+    text-align: left; 
+}
+
+/* Business Listings */
+#business-listings {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.business {
+    flex: 1;
+    margin: 0 10px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.business h3 {
+    margin-top: 0;
 }
 
 /* Responsive Design */
@@ -103,12 +129,68 @@ nav a:hover {
     header, main, footer {
         padding: 1em 10px;
     }
-    #cards section {
-        width: 100%;
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav li {
+        margin: 10px 0;
+    }
+    #home-sections, #business-listings {
+        flex-direction: column;
+    }
+    .section, .business {
+        margin-bottom: 20px;
     }
 }
 
 /* Footer Styling */
+footer {
+    background-color: #102c50;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #e7e7e7;
+    margin-top: 20px;
+}
+
 footer p {
     margin: 5px 0;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-left {
+    text-align: left;
+    margin-left: 80px;
+}
+
+.footer-right {
+    text-align: right;
+    margin-right: 80px;
+}
+
+footer .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+footer .social-media a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .social-media a:hover {
+    color: #ddd;
+}
+
+footer .social-media a i {
+    font-size: 24px;
 }

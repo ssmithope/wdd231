@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Directory of members of the Chamber of Commerce">
+    <meta name="author" content="Smith Eutrope Zephirin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce Directory</title>
+    <link rel="stylesheet" href="styles/directory.css">
+    <script src="scripts/directory.js" defer></script>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Facebook Open Graph meta tags -->
+    <meta property="og:title" content="Chamber of Commerce Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ssmithope.github.io/wdd231/chamber/directory.html/chamber/images/image.jpg">
+    <meta property="og:url" content="https://ssmithope.github.io/wdd231/chamber/directory.html">
+</head>
+<body>
+    <header>
+        <h1>Chamber of Commerce Directory</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="view-toggle">
+            <button id="gridView">Grid View</button>
+            <button id="listView">List View</button>
+        </div>
+    </nav>
+    <main>
+        <div id="cards"></div>
+    </main>
+    <footer>
+        <p>Smith Eutrope Zephirin | Chamber of Commerce | WDD 231</p>
+        <p>&copy; <span id="currentyear"></span> | Last Updated: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
