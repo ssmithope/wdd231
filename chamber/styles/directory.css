@@ -55,7 +55,7 @@ footer {
 /* Navigation Styling */
 nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end; /* Aligns the navigation links to the right */
     list-style: none;
     padding: 0;
     margin: 0;
