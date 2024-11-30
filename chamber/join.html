@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Join Us</title>
+    <link rel="stylesheet" href="styles/directory.css">
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-title">
+            <img src="images/logo.jpg" alt="Logo" class="logo">
+            <div class="title">
+                <h1>Timbuktu</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form method="get" action="thankyou.php">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" title="First Name" autocomplete="given-name" required>
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" title="Last Name" autocomplete="family-name" required>
+
+            <label for="organization-title">Organizational Title</label>
+            <input type="text" id="organization-title" name="organization-title" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" title="Email" autocomplete="email" placeholder="example@domain.com" required>
+
+            <label for="phone">Mobile Phone</label>
+            <input type="tel" id="phone" name="phone" title="Mobile Phone" autocomplete="tel" required>
+
+            <label for="organization">Organization</label>
+            <input type="text" id="organization" name="organization" title="Organization" autocomplete="organization" required>
+
+            <label for="membership-level">Membership Level</label>
+            <select id="membership-level" name="membership-level" title="Membership Level">
+                <option value="np-membership">NP Membership</option>
+                <option value="bronze-membership">Bronze Membership</option>
+                <option value="silver-membership">Silver Membership</option>
+                <option value="gold-membership">Gold Membership</option>
+            </select>
+
+            <label for="description">Description</label>
+            <textarea id="description" name="description" title="Description"></textarea>
+
+            <input type="hidden" id="timestamp" name="timestamp" value="<?php echo date('Y-m-d H:i:s'); ?>">
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <!-- Membership Cards with Modals -->
+        <div class="membership-cards">
+            <div class="card">
+                <h3>NP Membership</h3>
+                <a href="#np-modal">More Info</a>
+            </div>
+            <div id="np-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h4>NP Membership Benefits</h4>
+                    <p>Details about NP Membership benefits...</p>
+                </div>
+            </div>
+            <!-- Repeat for other membership levels -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <p>Timbuktu Chamber of Commerce</p>
+            <p>10 Rue De la Paix</p>
+            <p>Timbuktu, Mali 999</p>
+            <p>info@timbuktucc.org</p>
+            <p>(223) 555-2300</p>
+        </div>
+        <div class="footer-center">
+            <div class="social-media">
+                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p>WDD231 Class Project</p>
+            <p>Smith Eutrope Zephirin</p>
+            <p>&copy; 2024 Timbuktu Chamber of Commerce</p>
+            <p>&copy; <span id="currentyear"></span> | Last Updated: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <script>
+        // Script to handle modal display
+    </script>
+</body>
+</html>
