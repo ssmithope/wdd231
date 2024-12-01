@@ -2,14 +2,14 @@
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Join the Timbuktu Chamber of Commerce">
+    <meta name="description" content="Apply to join the Timbuktu Chamber of Commerce. Fill out the membership application form to become a member and enjoy the benefits of our community.">
     <meta name="author" content="Smith Eutrope Zephirin">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join the Timbuktu Chamber of Commerce</title>
+    <title>Join the Timbuktu Chamber of Commerce - Membership Application</title>
     <link rel="stylesheet" href="styles/directory.css">
     <script src="scripts/directory.js" defer></script>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <!-- Facebook Open Graph meta tags -->
+    <!-- Open Graph meta tags -->
     <meta property="og:title" content="Join the Timbuktu Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://ssmithope.github.io/wdd231/chamber/images/image.jpg">
@@ -36,11 +36,11 @@
         </nav>
     </header>
     <main>
-        <h1 class="join-title">JOIN</h1>
+        <h1 class="join-title">Join</h1>
         <section id="join-page">
             <div class="form-section">
                 <h2>Membership Application Form</h2>
-                <form>
+                <form action="thankyou.html" method="post">
                     <label for="first-name">First Name</label>
                     <input type="text" id="first-name" name="first-name" required>
                     
@@ -61,6 +61,8 @@
                     
                     <label for="description">Business Description</label>
                     <textarea id="description" name="description" required></textarea>
+                    
+                    <input type="hidden" name="form-type" value="membership-application">
                     
                     <button type="submit">Submit</button>
                 </form>
