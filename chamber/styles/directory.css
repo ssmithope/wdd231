@@ -137,7 +137,7 @@ h2 {
     margin: 20px 0; 
 } 
 
-/* Center the word "JOIN" on the left side */
+/* Center the word "Join" on the left side */
 .join-title {
     text-align: left;
     font-size: 2em;
@@ -184,7 +184,30 @@ h2 {
     color: white; 
     border: none; 
     padding: 10px 20px;
+    border-radius: 5px; 
+    cursor: pointer;
 }
+
+.form-section button:hover { 
+    background-color: #ddd; 
+    color: #102c50; 
+} 
+
+.form-section div { 
+    display: flex; 
+    align-items: center; 
+    margin-top: 10px; 
+} 
+
+.radio-group { 
+    display: flex; 
+    align-items: center; 
+    margin-top: 10px; 
+} 
+
+.radio-group input[type="radio"] {
+     margin-right: 10px; 
+    }
 
 /* Membership Levels Styling */ 
 .membership-section { 

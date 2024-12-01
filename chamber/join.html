@@ -40,7 +40,7 @@
         </nav>
     </header>
     <main>
-        <h1 class="join-title">JOIN</h1>
+        <h1 class="join-title">Join</h1>
         <section id="join-page">
             <div class="form-section">
                 <h2>Membership Application Form</h2>
@@ -62,9 +62,27 @@
                     
                     <label for="organization">Organization</label>
                     <input type="text" id="organization" name="organization" required>
-                    
+
                     <label for="description">Business Description</label>
                     <textarea id="description" name="description" required></textarea>
+                    
+                    <label>Membership Level</label>
+                    <div>
+                        <input type="radio" id="non-profit" name="membership-level" value="non-profit" required>
+                        <label for="non-profit">Non Profit Membership</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="bronze" name="membership-level" value="bronze">
+                        <label for="bronze">Bronze Membership</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="silver" name="membership-level" value="silver">
+                        <label for="silver">Silver Membership</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="gold" name="membership-level" value="gold">
+                        <label for="gold">Gold Membership</label>
+                    </div>
                     
                     <input type="hidden" name="form-type" value="membership-application">
                     
