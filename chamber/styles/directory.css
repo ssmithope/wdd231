@@ -4,6 +4,13 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+/* Custom CSS */
+@import url('styles/directory.css');
+
+
 /* Apply the Google Font to the body */
 body {
     font-family: 'Roboto', sans-serif;
