@@ -1,0 +1,169 @@
+/* Normalize CSS */
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Apply the Google Font to the body */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+
+/* Layout and Basic Styles */
+header, nav, main, footer {
+    padding: 1em;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+}
+header, footer {
+    background-color: #102c50;
+    color: white;
+    max-width: 1400px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.title h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+.title p {
+    margin: 0;
+    font-size: 0.8em;
+}
+footer {
+    margin-top: 20px;
+}
+
+/* Navigation Styling */
+nav { 
+    display: flex; 
+    align-items: center; 
+    margin-right: 10px; 
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav li {
+    margin: 0 15px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+nav a:hover {
+    background-color: #ddd;
+    color: #102c50;
+    border-radius: 5px;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+section h2 {
+    color: #1E90FF;
+    text-align: left;
+}
+section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #1E90FF;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #1C86EE;
+}
+
+/* Tab Content */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Social Media Icons */
+.social-media a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+.social-media a:hover {
+    color: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header, main, footer {
+        padding: 1em 10px;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav li {
+        margin: 10px 0;
+    }
+}

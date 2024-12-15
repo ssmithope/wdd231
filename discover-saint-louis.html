@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Your comprehensive guide to the history, culture, and attractions of Saint Louis, Missouri.">
+    <meta name="author" content="Smith Eutrope Zephirin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Saint Louis</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/discover-saint-louis.css">
+    <script src="scripts/discover-saint-louis.js" type="module"></script>
+    <meta property="og:title" content="Discover Saint Louis">
+    <meta property="og:description" content="Your comprehensive guide to the history, culture, and attractions of Saint Louis, Missouri.">
+    <meta property="og:image" content="images/gateway-arch.jpg">
+    <meta property="og:url" content="https://ssmithope.github.io/discover-saint-louis">
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-title">
+                <img src="images/logo.jpg" alt="Logo" class="logo">
+                <div class="title">
+                    <h1>Discover Saint Louis</h1>
+                    <p>Your comprehensive guide to the history, culture, and attractions of Saint Louis, Missouri.</p>
+                </div>
+            </div>
+            <div class="weather-calendar">
+                <div id="weather">
+                    <!-- Weather icon will be display here -->
+                </div>
+                <div id="calendar">
+                    <!-- Calendar will be display here -->
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="tab-link" data-tab="home">Home</a></li>
+                <li><a href="#attractions" class="tab-link" data-tab="attractions">Attractions</a></li>
+                <li><a href="#events" class="tab-link" data-tab="events">Events</a></li>
+                <li><a href="#food" class="tab-link" data-tab="food">Food</a></li>
+                <li><a href="#contact" class="tab-link" data-tab="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="tab-content">
+            <h2>Welcome to Saint Louis</h2>
+            <p>Explore the rich history, vibrant culture, and exciting attractions of Saint Louis. From the iconic Gateway Arch to the bustling streets of the Delmar Loop, Saint Louis offers a unique blend of historical landmarks, cultural experiences, and modern attractions. Whether you're a history buff, a foodie, or an adventure seeker, there's something for everyone in this vibrant city.</p>
+            <img src="images/gateway-arch.jpg" alt="Gateway Arch" loading="lazy">
+        </section>
+        <section id="attractions" class="tab-content">
+            <h2>Top Attractions</h2>
+            <p>Discover the must-visit landmarks and attractions in Saint Louis. Visit the world-renowned Saint Louis Zoo, explore the lush landscapes of Forest Park, and take a stroll through the historic Soulard neighborhood. Don't miss the chance to experience the awe-inspiring beauty of the Missouri Botanical Garden and the fascinating exhibits at the Saint Louis Science Center. Each attraction offers a unique glimpse into the city's rich heritage and vibrant present.</p>
+            <img src="images/attraction1.jpg" alt="Attraction 1" loading="lazy">
+            <img src="images/attraction2.jpg" alt="Attraction 2" loading="lazy">
+            <img src="images/attraction3.jpg" alt="Attraction 3" loading="lazy">
+            <img src="images/attraction4.jpg" alt="Attraction 4" loading="lazy">
+            <img src="images/attraction5.jpg" alt="Attraction 5" loading="lazy">
+        </section>
+        <section id="events" class="tab-content">
+            <h2>Upcoming Events</h2>
+            <p>Stay updated on the latest cultural events and festivals in the city. From the lively Mardi Gras celebrations in Soulard to the eclectic music festivals at Forest Park, Saint Louis is a hub of cultural activity year-round. Enjoy live performances at the Fabulous Fox Theatre, attend art exhibitions at the Saint Louis Art Museum, and participate in community events that bring the city to life. There's always something happening in Saint Louis, so make sure to check our events calendar regularly.</p>
+            <img src="images/event1.jpg" alt="Event 1" loading="lazy">
+            <img src="images/event2.jpg" alt="Event 2" loading="lazy">
+        </section>
+        <section id="food" class="tab-content">
+            <h2>Local Cuisine</h2>
+            <p>Experience the diverse and delicious food scene of Saint Louis. Indulge in the city's famous toasted ravioli, savor the flavors of St. Louis-style pizza, and enjoy a variety of culinary delights from around the world. From upscale dining establishments to cozy neighborhood cafes, Saint Louis offers a gastronomic adventure for every palate. Don't forget to try the iconic gooey butter cake, a local favorite that will leave you craving for more.</p>
+            <img src="images/food1.jpg" alt="Food 1" loading="lazy">
+            <img src="images/food2.jpg" alt="Food 2" loading="lazy">
+            <img src="images/food3.jpg" alt="Food 3" loading="lazy">
+            <img src="images/food4.jpg" alt="Food 4" loading="lazy">
+        </section>
+        <section id="contact" class="tab-content">
+            <h2>Contact Us</h2>
+            <form action="form-action.html" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Discover Saint Louis. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
